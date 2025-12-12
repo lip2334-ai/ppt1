@@ -1,1 +1,119 @@
-# ppt1
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Thesis Defense Cover</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .yonsei-blue-bg {
+            background-color: #003E7E; /* Yonsei Royal Blue approximation */
+        }
+        .yonsei-blue-text {
+            color: #003E7E;
+        }
+        .decorative-circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.05;
+        }
+        .bg-pattern {
+            background-image: radial-gradient(#003E7E 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.03;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container relative">
+<!-- Background Pattern -->
+<div class="absolute inset-0 bg-pattern z-0"></div>
+<!-- Decorative Elements -->
+<div class="decorative-circle yonsei-blue-bg w-96 h-96 -top-20 -right-20 z-0"></div>
+<div class="decorative-circle yonsei-blue-bg w-64 h-64 bottom-10 -left-10 z-0"></div>
+<!-- Top Bar (Header) -->
+<div class="w-full h-4 yonsei-blue-bg z-10"></div>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col justify-center items-center z-10 px-16 relative">
+<!-- Top Label -->
+<div class="mb-8">
+<p class="text-gray-500 font-medium tracking-widest text-lg uppercase border-b-2 border-gray-300 pb-1">Master's Thesis Defense</p>
+</div>
+<!-- Title Section -->
+<div class="text-center w-full max-w-5xl space-y-4 mb-12">
+<h1 class="text-5xl font-black text-gray-900 leading-tight tracking-tight">
+                    퍼스널모빌리티 확산이<br/>
+<span class="yonsei-blue-text">대중교통 수요</span>에 미치는 경제적 효과
+                </h1>
+<div class="flex items-center justify-center space-x-4">
+<div class="h-px w-20 bg-gray-400"></div>
+<h2 class="text-2xl text-gray-600 font-medium">패널데이터 회귀 모형을 중심으로</h2>
+<div class="h-px w-20 bg-gray-400"></div>
+</div>
+</div>
+<!-- Presenter Info Box -->
+<div class="bg-white bg-opacity-90 backdrop-filter backdrop-blur-sm border-l-4 border-blue-900 shadow-lg p-8 w-full max-w-3xl">
+<div class="grid grid-cols-2 gap-x-12 gap-y-6">
+<!-- Left Column: Institution -->
+<div class="flex flex-col justify-center border-r border-gray-200 pr-8">
+<div class="flex items-center space-x-3 mb-2">
+<i class="fas fa-university yonsei-blue-text text-xl"></i>
+<p class="text-gray-500 text-sm font-bold uppercase tracking-wider">Affiliation</p>
+</div>
+<p class="text-xl font-bold text-gray-800">연세대학교 경제대학원</p>
+<p class="text-lg text-gray-600">금융공학 전공</p>
+</div>
+<!-- Right Column: Details -->
+<div class="space-y-4">
+<div class="flex justify-between items-center border-b border-gray-100 pb-2">
+<span class="text-gray-500 font-medium">지도교수</span>
+<span class="text-xl font-bold text-gray-800">조 수 진 <span class="text-sm font-normal text-gray-500">교수</span></span>
+</div>
+<div class="flex justify-between items-center border-b border-gray-100 pb-2">
+<span class="text-gray-500 font-medium">발표자</span>
+<span class="text-xl font-bold text-gray-800">김 보 현</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-gray-500 font-medium">발표일</span>
+<span class="text-lg text-gray-800 font-medium">2025년 12월</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Bar (Footer) -->
+<div class="w-full py-4 bg-gray-50 flex justify-between items-center px-10 z-10 border-t border-gray-200">
+<div class="flex items-center space-x-2 text-gray-400">
+<i class="fas fa-book-open text-sm"></i>
+<p class="text-xs font-medium">Master of Economics Thesis</p>
+</div>
+<div class="flex items-center space-x-2">
+<p class="text-xs text-gray-400 font-mono">YONSEI UNIVERSITY</p>
+</div>
+</div>
+</div>
+</body>
+</html>
